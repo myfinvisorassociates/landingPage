@@ -146,7 +146,7 @@
     text-transform: uppercase; color: var(--green); margin-bottom: 14px;
     display: flex; align-items: center; gap: 8px;
   }
-  .section-label::before { content: ''; width: 28px; height: 2px; background: var(--green); border-radius: 2px; }
+  .section-label::before { display: none; }
   .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 3.5vw, 2.8rem); color: var(--navy); font-weight: 700; line-height: 1.2; }
   .section-title em { color: var(--green); font-style: normal; }
   .section-sub { font-size: 1.05rem; color: var(--muted); line-height: 1.7; margin-top: 14px; max-width: 580px; }
@@ -191,7 +191,7 @@
   .how { background: var(--navy); }
   .how .section-title { color: #fff; }
   .how .section-label { color: var(--gold); }
-  .how .section-label::before { background: var(--gold); }
+  .how .section-label::before { display: none; }
   .how .section-sub { color: rgba(255,255,255,0.6); }
   .how-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 56px; }
   .steps { display: flex; flex-direction: column; gap: 0; }
@@ -348,12 +348,11 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="/services.html">Services</a></li>
     <li><a href="#how">How It Works</a></li>
     <li><a href="#why">Why Us</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#plans">Plans</a></li>
   </ul>
-  <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="nav-cta">Book Free Call</a>
+  <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="nav-cta">Book a 15 Min Call</a>
   <div class="hamburger"><span></span><span></span><span></span></div>
 </nav>
 
@@ -366,11 +365,11 @@
         <span>SEBI Registered Advisors • No Commissions</span>
       </div>
       <h1>Your Money Deserves <em>Expert</em> Guidance</h1>
-      <p>You've built wealth — now let's make it work harder. MyFinvisor connects you with certified financial advisors who simplify Mutual Funds and ETFs for first-time investors.</p>
+      <p>You've built wealth now let's make it work harder. MyFinvisor connects you with certified financial advisors who simplify Mutual Funds and ETFs for first time investors.</p>
       <div class="hero-btns">
         <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="btn-primary">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.92 1.18 2 2 0 012.89 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
-          Book a Free Call
+          Book a 15 Min Call
         </a>
         <a href="#services" class="btn-secondary">
           Explore Services →
@@ -384,10 +383,6 @@
         <div class="stat-item">
           <div class="stat-num">₹10L+</div>
           <div class="stat-label">Assets Guided</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num">4.9★</div>
-          <div class="stat-label">Google Rating</div>
         </div>
       </div>
     </div>
@@ -409,21 +404,7 @@
           <span class="portfolio-val" style="color:#4eca8b">+18.4%</span>
         </div>
       </div>
-      <div class="float-card card-small-1">
-        <div class="card-tag">This Month</div>
-        <div class="gain">+₹84,200</div>
-        <div class="gain-label">Portfolio Gain</div>
-        <div class="tag-list" style="margin-top:10px">
-          <span class="tag">Nifty 50 ETF</span>
-          <span class="tag">SIP</span>
-        </div>
-      </div>
-      <div class="float-card card-small-2">
-        <div class="card-tag">Asset Mix</div>
-        <div class="portfolio-row"><span class="portfolio-label">Mutual Funds</span><span class="portfolio-val">55%</span></div>
-        <div class="portfolio-row"><span class="portfolio-label">ETFs</span><span class="portfolio-val">25%</span></div>
-        <div class="portfolio-row"><span class="portfolio-label">Equity</span><span class="portfolio-val">20%</span></div>
-      </div>
+    </div>
     </div>
   </div>
 </section>
@@ -435,9 +416,9 @@
       <div>
         <div class="section-label">What We Advise On</div>
         <h2 class="section-title">Personalised Advice on <em>Every</em> Asset Class</h2>
-        <p class="section-sub">Whether you're starting your investment journey or looking to optimise, we guide you through every option — jargon-free.</p>
+        <p class="section-sub">Whether you're starting your investment journey or looking to optimise, we guide you through every option jargon-free.</p>
       </div>
-      <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="btn-primary" style="white-space:nowrap">Book Free Call →</a>
+      <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="btn-primary" style="white-space:nowrap">Book a 15 Min Call →</a>
     </div>
     <div class="services-grid">
 
@@ -459,6 +440,24 @@
         <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="service-arrow">Talk to an Advisor →</a>
       </div>
 
+      <div class="service-card fade-up" style="animation-delay:.2s">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3>Portfolio Diversification</h3>
+        <p>We analyse your existing portfolio to identify concentration risks, rebalance asset allocation, and recommend diversification strategies across mutual funds, ETFs, and equity to optimise returns.</p>
+        <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="service-arrow">Talk to an Advisor →</a>
+      </div>
+
+      <div class="service-card fade-up" style="animation-delay:.3s">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>General Investment Advisory</h3>
+        <p>Not sure where to start? Get clear, unbiased guidance on all your investment-related questions from choosing the right instrument to understanding market cycles and building long-term wealth.</p>
+        <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="service-arrow">Talk to an Advisor →</a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -468,22 +467,22 @@
   <div class="section-inner">
     <div class="section-label">The MyFinvisor Experience</div>
     <h2 class="section-title">Expert Guidance, <em>Every Step</em></h2>
-    <p class="section-sub">We don't sell products. We help you understand and decide — from your first question to your first investment.</p>
+    <p class="section-sub">We don't sell products. We help you understand and decide from your first question to your first investment.</p>
     <div class="how-layout fade-up">
       <div class="steps">
         <div class="step active">
           <div class="step-num">01</div>
           <div class="step-content">
-            <h3>Book a Free 15-Min Call</h3>
+            <h3>Book a 15 Min Call</h3>
             <p>No sales pitch. Just a real conversation about your financial goals, current savings, and what you want to achieve.</p>
-            <div class="step-pills"><span class="pill">Zero Cost</span><span class="pill">Zero Spam</span><span class="pill">15 Minutes</span></div>
+            <div class="step-pills"><span class="pill">Zero Cost</span><span class="pill">Zero Spam</span><span class="pill">10 Minutes</span></div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">02</div>
           <div class="step-content">
             <h3>Get a Personalised Plan</h3>
-            <p>Our SEBI-registered advisors study your profile and recommend options across Mutual Funds and ETFs — clearly explained.</p>
+            <p>Our SEBI registered advisors study your profile and recommend options across Mutual Funds and ETFs clearly explained.</p>
             <div class="step-pills"><span class="pill">Risk Profiling</span><span class="pill">Goal Mapping</span></div>
           </div>
         </div>
@@ -491,7 +490,7 @@
           <div class="step-num">03</div>
           <div class="step-content">
             <h3>Flexible Payment Plans</h3>
-            <p>Choose a plan that fits your budget — from one-time advisory sessions to ongoing monthly support packages.</p>
+            <p>Choose a plan that fits your budget from one-time advisory sessions to ongoing monthly support packages.</p>
             <div class="step-pills"><span class="pill">One-Time</span><span class="pill">Monthly</span><span class="pill">Annual</span></div>
           </div>
         </div>
@@ -499,7 +498,7 @@
           <div class="step-num">04</div>
           <div class="step-content">
             <h3>End-to-End Onboarding</h3>
-            <p>We hand-hold you through account opening, KYC, first investment, and portfolio setup — no confusion, no guesswork.</p>
+            <p>We hand-hold you through account opening, KYC, first investment, and portfolio setup no confusion, no guesswork.</p>
             <div class="step-pills"><span class="pill">Demat Help</span><span class="pill">KYC Support</span></div>
           </div>
         </div>
@@ -507,7 +506,7 @@
           <div class="step-num">05</div>
           <div class="step-content">
             <h3>Ongoing Portfolio Support</h3>
-            <p>Quarterly reviews, rebalancing alerts, and a direct line to your advisor — because investing is a journey, not a one-time event.</p>
+            <p>Quarterly reviews, rebalancing alerts, and a direct line to your advisor because investing is a journey, not a one-time event.</p>
             <div class="step-pills"><span class="pill">Quarterly Review</span><span class="pill">Rebalancing</span><span class="pill">Tax Planning</span></div>
           </div>
         </div>
@@ -526,7 +525,7 @@
           <div class="visual-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.92 1.18 2 2 0 012.89 0h3a2 2 0 012 1.72"/></svg></div>
           <div>
             <div class="visual-text-title">Lifetime Advisor Access</div>
-            <div class="visual-text-sub">Call anytime — we're always here</div>
+            <div class="visual-text-sub">Call anytime we're always here</div>
           </div>
           <div class="visual-badge">10AM – 7PM</div>
         </div>
@@ -558,13 +557,12 @@
             <span>MyFinvisor</span>
             <span>Others</span>
           </div>
-          <div class="compare-row"><span class="compare-label">Commission-free advice</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
-          <div class="compare-row"><span class="compare-label">SEBI-registered advisors</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
+          <div class="compare-row"><span class="compare-label">Commission free advice</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
+          <div class="compare-row"><span class="compare-label">SEBI registered advisors</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
           <div class="compare-row"><span class="compare-label">No spam / cold calls</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
           <div class="compare-row"><span class="compare-label">Covers MF &amp; ETF</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">~</span></div>
-          <div class="compare-row"><span class="compare-label">Jargon-free explanations</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
+          <div class="compare-row"><span class="compare-label">Jargon free explanations</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
           <div class="compare-row"><span class="compare-label">Quarterly rebalancing</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
-          <div class="compare-row"><span class="compare-label">Tax optimisation support</span><span class="compare-check check-yes">✓</span><span class="compare-check check-no">✗</span></div>
         </div>
       </div>
       <div class="why-points">
@@ -572,21 +570,21 @@
           <div class="why-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <div>
             <h4>Zero Commission Model</h4>
-            <p>Our advisors are paid a flat advisory fee — never a cut of what you invest. Your interests come first, always.</p>
+            <p>Our advisors are paid a flat advisory fee never a cut of what you invest. Your interests come first, always.</p>
           </div>
         </div>
         <div class="why-point">
           <div class="why-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
           <div>
-            <h4>Education-First Approach</h4>
-            <p>We don't just pick funds for you — we teach you why. So next time, you know exactly what you're doing.</p>
+            <h4>Education First Approach</h4>
+            <p>We don't just pick funds for you we teach you why. So next time, you know exactly what you're doing.</p>
           </div>
         </div>
         <div class="why-point">
           <div class="why-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
           <div>
             <h4>Advisor You Can Trust</h4>
-            <p>Every advisor is SEBI-registered, background-verified, and trained to say "I don't know" when they don't.</p>
+            <p>Every advisor is SEBI registered, background verified, and trained to say "I don't know" when they don't.</p>
           </div>
         </div>
       </div>
@@ -601,26 +599,99 @@
   <div class="section-label" style="color:var(--gold);justify-content:center;margin-bottom:16px">
     <span style="display:inline-flex;align-items:center;gap:8px">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07"/></svg>
-      BOOK YOUR FREE CONSULTATION
+      BOOK YOUR CONSULTATION
     </span>
   </div>
   <h2>Turn Your Savings into a <em>Smart Portfolio</em></h2>
-  <p>You have the capital. We have the expertise. A 30-minute call is all it takes to start your wealth-building journey — at zero cost, zero spam.</p>
+  <p>You have the capital. We have the expertise. A 30 minute call is all it takes to start your wealth-building journey at zero cost, zero spam.</p>
   <div class="cta-btns">
     <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" class="btn-primary" style="font-size:1rem;padding:16px 36px">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.92 1.18 2 2 0 012.89 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
-      Book a Free Call
+      Book a 15 Min Call
     </a>
-    <a href="https://wa.me/919018923455" target="_blank" class="btn-secondary" style="font-size:1rem;padding:16px 36px">
+    <a href="https://wa.me/918716946666" target="_blank" class="btn-secondary" style="font-size:1rem;padding:16px 36px">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
       Chat on WhatsApp
     </a>
   </div>
   <div class="trust-badges">
     <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>SEBI Registered</span></div>
-    <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>15-Min Free Call</span></div>
+    <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>15 Min Call</span></div>
     <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>Zero Spam Policy</span></div>
     <div class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg><span>No Commission</span></div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section style="background:var(--offwhite);padding:90px 5%;" id="plans">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:56px;">
+      <div class="section-label" style="justify-content:center;"><span>Our Plans</span></div>
+      <h2 class="section-title">Simple, Transparent <em>Pricing</em></h2>
+      <p class="section-sub" style="margin:14px auto 0;text-align:center;">Choose a plan that fits your financial journey. All plans include access to SEBI registered advisors.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:40px;">
+
+      <div style="background:#fff;border-radius:16px;padding:36px 30px;border:1px solid var(--border);text-align:center;transition:all .25s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 8px 40px rgba(11,30,61,0.10)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+        <div style="font-size:0.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Basic</div>
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--navy);">₹2,999<span style="font-size:1rem;font-weight:400;color:var(--muted);">/year</span></div>
+        <div style="font-size:0.9rem;color:var(--muted);margin:14px 0 24px;">Budgeting and Goal Planning</div>
+        <ul style="list-style:none;text-align:left;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Personal budget analysis</li>
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Short and long-term goal mapping</li>
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> SIP recommendations</li>
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Email support</li>
+        </ul>
+        <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" style="display:block;background:var(--navy);color:#fff;padding:12px 24px;border-radius:50px;font-weight:600;font-size:0.9rem;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy)'" onmouseout="this.style.background='var(--navy)';this.style.color='#fff'">Get Started</a>
+      </div>
+
+      <div style="background:var(--navy);border-radius:16px;padding:36px 30px;text-align:center;position:relative;overflow:hidden;transition:all .25s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 8px 40px rgba(11,30,61,0.25)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+        <div style="position:absolute;top:16px;right:16px;background:var(--gold);color:var(--navy);font-size:0.72rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.06em;">POPULAR</div>
+        <div style="font-size:0.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:12px;">Growth</div>
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:#fff;">₹4,999<span style="font-size:1rem;font-weight:400;color:rgba(255,255,255,0.55);">/year</span></div>
+        <div style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin:14px 0 24px;">Portfolio Review and Investment Ideas</div>
+        <ul style="list-style:none;text-align:left;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:0.88rem;color:rgba(255,255,255,0.85);display:flex;gap:8px;align-items:center;"><span style="color:var(--gold);font-weight:700;">✓</span> Everything in Basic</li>
+          <li style="font-size:0.88rem;color:rgba(255,255,255,0.85);display:flex;gap:8px;align-items:center;"><span style="color:var(--gold);font-weight:700;">✓</span> Quarterly portfolio review</li>
+          <li style="font-size:0.88rem;color:rgba(255,255,255,0.85);display:flex;gap:8px;align-items:center;"><span style="color:var(--gold);font-weight:700;">✓</span> Curated investment ideas</li>
+          <li style="font-size:0.88rem;color:rgba(255,255,255,0.85);display:flex;gap:8px;align-items:center;"><span style="color:var(--gold);font-weight:700;">✓</span> Rebalancing alerts</li>
+          <li style="font-size:0.88rem;color:rgba(255,255,255,0.85);display:flex;gap:8px;align-items:center;"><span style="color:var(--gold);font-weight:700;">✓</span> Priority chat support</li>
+        </ul>
+        <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" style="display:block;background:var(--gold);color:var(--navy);padding:12px 24px;border-radius:50px;font-weight:700;font-size:0.9rem;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">Get Started</a>
+      </div>
+
+      <div style="background:#fff;border-radius:16px;padding:36px 30px;border:1px solid var(--border);text-align:center;transition:all .25s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 8px 40px rgba(11,30,61,0.10)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+        <div style="font-size:0.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Premium</div>
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--navy);">₹9,999<span style="font-size:1rem;font-weight:400;color:var(--muted);">/year</span></div>
+        <div style="font-size:0.9rem;color:var(--muted);margin:14px 0 24px;">Full Financial Planning</div>
+        <ul style="list-style:none;text-align:left;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Everything in Growth</li>
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Comprehensive financial plan</li>
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Tax-efficient investing guidance</li>
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Monthly advisor check-ins</li>
+          <li style="font-size:0.88rem;color:var(--text);display:flex;gap:8px;align-items:center;"><span style="color:var(--green);font-weight:700;">✓</span> Dedicated relationship manager</li>
+        </ul>
+        <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" style="display:block;background:var(--navy);color:#fff;padding:12px 24px;border-radius:50px;font-weight:600;font-size:0.9rem;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy)'" onmouseout="this.style.background='var(--navy)';this.style.color='#fff'">Get Started</a>
+      </div>
+
+    </div>
+
+    <!-- Per-call pricing -->
+    <div style="background:var(--navy);border-radius:16px;padding:32px 40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:center;text-align:center;">
+      <div>
+        <div style="font-size:0.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Pay Per Call</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:#fff;">First Call <span style="color:var(--gold);">₹50</span></div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.55);margin-top:4px;">Introductory advisory session</div>
+      </div>
+      <div style="width:1px;height:60px;background:rgba(255,255,255,0.15);"></div>
+      <div>
+        <div style="font-size:0.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Follow-up Calls</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:#fff;">₹20 <span style="font-size:1rem;font-weight:400;color:rgba(255,255,255,0.55);">per call</span></div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.55);margin-top:4px;">For existing clients</div>
+      </div>
+      <a href="https://cal.com/myfinvisorassociates/15min" target="_blank" style="background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:50px;font-weight:700;font-size:0.95rem;text-decoration:none;">Book a 15 Min Call Now</a>
+    </div>
+
   </div>
 </section>
 
@@ -636,43 +707,13 @@
             <span style="font-family:'DM Sans',Arial,sans-serif;font-size:0.55rem;font-weight:500;color:rgba(255,255,255,0.7);letter-spacing:2px;margin-top:3px;">Deep Insight. Lasting Wealth.</span>
           </div>
         </a>
-        <p>Commission-free financial advisory for investors who have the capital but need the clarity. Mutual Funds and ETFs — explained simply, executed confidently.</p>
+        <p>Commission free financial advisory for investors who have the capital but need the clarity. Mutual Funds and ETFs explained simply, executed confidently.</p>
         <div class="sebi-badge" style="margin-top:18px;display:inline-flex">
           <span>SEBI Registered Investment Adviser</span>
         </div>
         <div class="footer-disclaimer">Investments are subject to market risk. Please read all scheme-related documents carefully. MyFinvisor is not liable for market losses. Past performance does not guarantee future returns.</div>
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">Mutual Fund Advisory</a></li>
-          <li><a href="#">ETF Planning</a></li>
-          <li><a href="#">Equity Research</a></li>
-          <li><a href="#">Goal-based Planning</a></li>
-          <li><a href="#">Tax Optimisation</a></li>
-        </ul>
       </div>
-      <div class="footer-col">
-        <h4>Learn</h4>
-        <ul>
-          <li><a href="#">What is a Mutual Fund?</a></li>
-          <li><a href="#">ETF vs Mutual Fund</a></li>
-          <li><a href="#">How to start SIP</a></li>
-          <li><a href="#">Nifty 50 Guide</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Advisors</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="footer-bottom">
       <p>© 2026 MyFinvisor Financial Services Pvt. Ltd. All rights reserved.</p>
 
