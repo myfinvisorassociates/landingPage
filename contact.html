@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us | MyFinvisor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0b1e3d;
+    --gold: #d4a843;
+    --cream: #faf7f2;
+    --offwhite: #f4f0e8;
+    --text: #1c2b3a;
+    --muted: #6b7a8d;
+    --green: #1a7a5e;
+    --border: #ddd8ce;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 80px 5% 60px; }
+  h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--navy); margin-bottom: 12px; text-align: center; }
+  .subtitle { font-size: 1.1rem; color: var(--muted); margin-bottom: 50px; text-align: center; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .back-link { display: inline-block; margin-bottom: 24px; color: var(--navy); font-weight: 600; }
+  .back-link:hover { color: var(--gold); text-decoration: none; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; }
+  .contact-card { background: #fff; padding: 36px; border-radius: 16px; border: 1px solid var(--border); }
+  .contact-card h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--navy); margin-bottom: 20px; }
+  .contact-item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; }
+  .contact-icon { width: 44px; height: 44px; background: var(--offwhite); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .contact-icon svg { width: 22px; height: 22px; stroke: var(--navy); }
+  .contact-text strong { display: block; color: var(--navy); font-weight: 600; margin-bottom: 4px; }
+  .contact-text a { color: var(--gold); text-decoration: none; }
+  .contact-text a:hover { text-decoration: underline; }
+  .form-container { background: #fff; padding: 40px; border-radius: 16px; border: 1px solid var(--border); margin-top: 40px; }
+  .form-container h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 24px; }
+  .form-group { margin-bottom: 20px; }
+  .form-group label { display: block; font-weight: 600; color: var(--navy); margin-bottom: 8px; font-size: 0.95rem; }
+  .form-group input, .form-group textarea { width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 1rem; }
+  .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); }
+  .form-group textarea { resize: vertical; min-height: 120px; }
+  .submit-btn { background: var(--navy); color: #fff; padding: 14px 32px; border: none; border-radius: 50px; font-weight: 700; font-size: 0.95rem; cursor: pointer; transition: all 0.2s; }
+  .submit-btn:hover { background: var(--gold); color: var(--navy); }
+  @media (max-width: 768px) {
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <h1>Contact Us</h1>
+  <p class="subtitle">Have questions? We're here to help. Reach out to us via phone, email, or WhatsApp, or fill out the form below.</p>
+
+  <div class="contact-grid">
+    
+    <div class="contact-card">
+      <h2>Get in Touch</h2>
+      
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.92 1.18 2 2 0 012.89 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81"/></svg>
+        </div>
+        <div class="contact-text">
+          <strong>Phone</strong>
+          <a href="tel:+918716946666">+91-8716946666</a><br>
+          <span style="font-size:0.9rem;color:var(--muted);">Mon - Sat, 10 AM - 7 PM</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+        </div>
+        <div class="contact-text">
+          <strong>Email</strong>
+          <a href="mailto:support@myfinvisor.com">support@myfinvisor.com</a><br>
+          <span style="font-size:0.9rem;color:var(--muted);">We'll respond within 24 hours</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </div>
+        <div class="contact-text">
+          <strong>WhatsApp</strong>
+          <a href="https://wa.me/918716946666" target="_blank">+91-8716946666</a><br>
+          <span style="font-size:0.9rem;color:var(--muted);">Chat with us instantly</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact-card">
+      <h2>Office Address</h2>
+      
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="contact-text">
+          <strong>MyFinvisor Financial Services Pvt. Ltd.</strong>
+          <p style="margin-top:8px;line-height:1.6;color:var(--text);">
+            123, Investment Plaza<br>
+            Sector 44, Gurugram<br>
+            Haryana 122003, India
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;padding:16px;background:var(--offwhite);border-radius:12px;">
+        <p style="font-size:0.88rem;color:var(--muted);margin-bottom:8px;"><strong style="color:var(--navy);">SEBI Registration:</strong></p>
+        <p style="font-size:0.88rem;color:var(--text);">SEBI Registered Investment Adviser</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="form-container">
+    <h2>Send Us a Message</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="e.g., Question about mutual funds">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <p style="margin-top:20px;font-size:0.88rem;color:var(--muted);">* Required fields. Your information is safe with us and will never be shared with third parties.</p>
+  </div>
+
+</div>
+</body>
+</html>
